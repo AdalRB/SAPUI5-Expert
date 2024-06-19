@@ -2,21 +2,19 @@
           xmlns="sap.m" 
           xmlns:mvc="sap.ui.core.mvc"
           displayBlock="true">
-      <App >
-            <pages>
-                  <Page title="{i18n>AppTitle}">
-                        <content>
-                              <Panel headerText="{i18n>hellowPanel}">
-                                    <content>
-                                          <Button id="btn1" text="{i18n>showHelloButtonText}" press=".onShowHello"></Button>
-                                          <Input id="ip1" value="{/recipient/name}"
-                                                description="Hello {/recipient/name}"
-                                                valueLiveUpdate="true"
-                                                width="60%"></Input>
-                                    </content>
-                              </Panel>
-                        </content>
-                  </Page>
-            </pages>
-      </App>
+      <Shell >
+            <App >
+                  <pages>
+                        <Page title="{i18n>AppTitle}">
+                        <headerContent>
+                              <Button id="btnHD" icon="sap-icon://action" press=".onOpenDialogHeader" class="sapUiSmallMarginEnd"/>
+                        </headerContent>
+                              <content>
+                                   <mvc:XMLView viewName="alfa02.SAPUI5.view.HelloPanel"/>
+                                   <mvc:XMLView viewName="alfa02.SAPUI5.view.InvoicesList"/>
+                              </content>
+                        </Page>
+                  </pages>
+            </App>
+      </Shell>
 </mvc:View>

@@ -1,0 +1,44 @@
+{
+    "Invoices": [
+        {
+            "ProductName": "HDD-Samsung 250Gb",
+            "Quantity": 21,
+            "ExtendedPrice": 87.200,
+            "ShipperName": "Fun Inc.",
+            "ShippedDate": "2015-04-01T00:00:00",
+            "Status": "A"
+        },
+        {
+            "ProductName": "Display Dell UH850 4K 27",
+            "Quantity": 4,
+            "ExtendedPrice": 9.999,
+            "ShipperName": "ACME",
+            "ShippedDate": "2015-02-18T00:00:00",
+            "Status": "B"
+        },
+        {
+            "ProductName": "RAM PX DDR4 PC4-24000 16GB",
+            "Quantity": 3,
+            "ExtendedPrice": 6.850,
+            "ShipperName": "ACME",
+            "ShippedDate": "2015-03-02T00:00:00",
+            "Status": "B"
+        },
+        {
+            "ProductName": "SSD-ADATA M.2 1TB",
+            "Quantity": 14,
+            "ExtendedPrice": 870.800,
+            "ShipperName": "DDTech",
+            "ShippedDate": "2016-03-01T00:00:00",
+            "Status": "C"
+        },
+        {
+            "ProductName": "Intel Core i7-9700k 3.6Ghz",
+            "Quantity": 2,
+            "ExtendedPrice": 8.800,
+            "ShipperName": "DDTech",
+            "ShippedDate": "2016-04-01T00:00:00",
+            "Status": "A"
+        }
+    ]
+}
