@@ -16,7 +16,7 @@
             "toolsId": "c1791e66-fa95-4bc7-b0bb-a3a28507c394"
         },
         "dataSources": {
-            "Northwind": {
+            "mainService": {
                 "uri": "V2/Northwind/Northwind.svc",
                 "type": "OData",
                 "settings": {
@@ -73,9 +73,9 @@
                 "type": "sap.ui.model.json.JSONModel",
                 "uri": "Invoices.json"
             },
-            "": {
+            "northwind": {
                 "preload": true,
-                "dataSource": "Northwind",
+                "dataSource": "mainService",
                 "settings": {
                     "defaultBindingMode": "TwoWay",
                     "defaultCountMode": "Inline",
