@@ -9,9 +9,10 @@ sap.ui.define([
  */
 function(InvoicesFormatter, ResourceModel) {
     QUnit.module("Qnvoices Status", {
-        beforeEach: function(){
+
+        beforeEach: function () {
             this._oResourceModel = new ResourceModel({
-                bundleUrl: sap.ui.require.toUrl("alfa02/SAPUI5") + "/i18/i18n.properties"
+                bundleUrl: sap.ui.require.toUrl("alfa02/SAPUI5") + "/i18n/i18n.properties"
             });
         },
         afterEach: function(){
@@ -19,7 +20,7 @@ function(InvoicesFormatter, ResourceModel) {
         }
     });
     QUnit.test("Sould return the Invoice Status", function(assert){
-        let oModel = this.sub();
+        let oModel = this.stub();
 
         oModel.withArgs("i18n").returns(this._oResourceModel);
 

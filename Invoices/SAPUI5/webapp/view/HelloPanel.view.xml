@@ -5,7 +5,7 @@
           displayBlock="true" >
      <Panel headerText="{i18n>hellowPanel}">
         <content>
-            <Button id="btn2" icon="sap-icon://action" text="{i18n>HelloDialogBut}" press=".onOpenDialog" class="sapUiSmallMarginEnd"/>
+            <Button id="helloDialogButton" icon="sap-icon://action" text="{i18n>HelloDialogBut}" press=".onOpenDialog" class="sapUiSmallMarginEnd"/>
             <Button id="btn1" text="{i18n>showHelloButtonText}" press=".onShowHello" class="sapUiSmallMarginEnd"/>
             <Input id="ip1" value="{/recipient/name}"
                 valueLiveUpdate="true"
