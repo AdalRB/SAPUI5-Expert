@@ -1,0 +1,22 @@
+<mvc:View controllerName="alfa02.SAPUI5.controller.Details"
+          xmlns="sap.m" 
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:core="sap.ui.core"
+          xmlns:alfa02="alfa02.SAPUI5.control"
+          displayBlock="true">
+    <Page title="{i18n>detailsPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
+        <ObjectHeader title="{northwind>Quantity} x {northwind>ProductName}">
+            <attributes>
+                <ObjectAttribute text="{northwind>ShipName}"/>
+                <ObjectAttribute text="{northwind>ShipAddress}"/>
+                <ObjectAttribute text="{northwind>ShipCity}"/>
+                <ObjectAttribute text="{northwind>ShipRegion}"/>
+                <ObjectAttribute text="{northwind>ShipPostalCode}"/>
+                <ObjectAttribute text="{northwind>ShipCountry}"/>
+                <ObjectAttribute text="{northwind>CustomerID}"/>
+                <ObjectAttribute text="{northwind>CustomerName}"/>
+            </attributes>
+        </ObjectHeader>
+        <alfa02:ProductRating id="rating" class="sapUiSmallMarginBeginEnd" change=".onRatingChange"/>
+    </Page>
+</mvc:View>

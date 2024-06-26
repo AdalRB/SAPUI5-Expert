@@ -24,10 +24,13 @@ sap.ui.define([
                 // set data model on the view
                 this.setModel(models.createRecipient());
                 // set i18n model on the view
-                var i18nModel = new ResourceModel({ bundleName: "alfa02.SAPUI5.i18n.i18n" });
-                this.setModel(i18nModel, "i18n");
+                // var i18nModel = new ResourceModel({ bundleName: "alfa02.SAPUI5.i18n.i18n" });
+                // this.setModel(i18nModel, "i18n");
 
                 this._helloDialog = new HelloDialog(this.getRootControl());
+
+                //Create the views based on the uri
+                this.getRouter().initialize();
             },
 
             exit: function(){
