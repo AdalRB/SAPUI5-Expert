@@ -3,10 +3,21 @@
           xmlns:mvc="sap.ui.core.mvc"
           xmlns:core="sap.ui.core"
           displayBlock="true" >
-     <Panel headerText="{i18n>hellowPanel}">
+     <Panel headerText="{i18n>hellowPanel}"
+            class="sapUiResponsiveMargin"
+            width="auto"
+            expandable="{device>/system/phone}"
+            expanded="{= !${device>/system/phone}}">
         <content>
-            <Button id="helloDialogButton" icon="sap-icon://action" text="{i18n>HelloDialogBut}" press=".onOpenDialog" class="sapUiSmallMarginEnd"/>
-            <Button id="btn1" text="{i18n>showHelloButtonText}" press=".onShowHello" class="sapUiSmallMarginEnd"/>
+            <Button id="helloDialogButton" 
+                    icon="sap-icon://action" 
+                    text="{i18n>HelloDialogBut}" 
+                    press=".onOpenDialog" 
+                    class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"/>
+            <Button id="btn1" 
+                    text="{i18n>showHelloButtonText}" 
+                    press=".onShowHello" 
+                    class="sapUiSmallMarginEnd sapUiHideOnDesktop"/>
             <Input id="ip1" value="{/recipient/name}"
                 valueLiveUpdate="true"
                 width="60%"/>

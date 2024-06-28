@@ -4,15 +4,23 @@
           xmlns:core="sap.ui.core"
           displayBlock="true">
     <Page title="{i18n>AppTitle}">
-            <headerContent>
-                <Button id="btnHD" 
-                        icon="sap-icon://action" 
-                        press=".onOpenDialogHeader" 
-                        class="sapUiSmallMarginEnd"/>
-            </headerContent>
-            <content>
-                <mvc:XMLView viewName="alfa02.SAPUI5.view.HelloPanel"/>
-                <mvc:XMLView viewName="alfa02.SAPUI5.view.InvoicesList"/>
-            </content>
+        <landmarkInfo>
+            <PageAccessibleLandmarkInfo rootRole="Region"
+                                        rootLabel="{i18n>overviewRootLabel}"
+                                        contentRole="Main"
+                                        contentLabel="{i18n>overviewContentLabel}"
+                                        headerRole="Banner"
+                                        headerLabel="{i18n>overviewHeaderLabel}"/>
+        </landmarkInfo>
+        <headerContent>
+            <Button id="btnHD" 
+                    icon="sap-icon://action" 
+                    press=".onOpenDialogHeader" 
+                    class="sapUiSmallMarginEnd"/>
+        </headerContent>
+        <content>
+            <mvc:XMLView viewName="alfa02.SAPUI5.view.HelloPanel"/>
+            <mvc:XMLView viewName="alfa02.SAPUI5.view.InvoicesList"/>
+        </content>
     </Page>
 </mvc:View>
