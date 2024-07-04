@@ -75,7 +75,6 @@ function(Control, RatingIndicator, Label, Button) {
 
             this.getAggregation("_rating").setEnabled(false);
             this.getAggregation("_label").setText(oResourceBundle.getText("productRatingLabelFinal"));
-            this.getAggregation("_label").setDesign("Standar");
             this.getAggregation("_button").setEnabled(false);
             this.fireEvent("change",{
                 value: this.getValue()

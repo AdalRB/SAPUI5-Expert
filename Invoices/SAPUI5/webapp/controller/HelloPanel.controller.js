@@ -23,7 +23,7 @@ sap.ui.define([
                 Log.error(window.message);
             },
             onAfterRendering: function(){
-                debugger;
+                //debugger;
             },
             onShowHello: function () {
                 // read text from i18n model
